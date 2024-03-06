@@ -1,0 +1,9 @@
+@function get-vw($target,$dWidth) {
+    $vw-context: ($dWidth * 0.01);
+    @return calc($target / $vw-context) * 1vw;
+}
+
+@function get-vh($target,$dHeight) {
+    $vh-context: ($dHeight * 0.01);
+    @return calc($target / $vh-context) * 1vh;
+}

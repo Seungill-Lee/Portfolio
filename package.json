@@ -1,0 +1,24 @@
+{
+  "author": {
+    "name": "Lee Seung Ill",
+    "email": "ever9415@nate.com"
+  },
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.71.1"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  }
+}
