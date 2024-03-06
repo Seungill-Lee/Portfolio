@@ -139,8 +139,7 @@ gulp.task('default', gulp.series([gulp.parallel(['watch','webserver'])]));
 
 //git setting
 gulp.task('deploy', function() {
-    gulp.src('./dist/**/*')
-        .pipe(del([".publish"]))
-        .pipe(ghPages());
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages())
 });
 
