@@ -1,2 +1,2 @@
-# si-portfolio.github.io
+# Seungills Portfolio
 Seungills Portfolio basic setting
