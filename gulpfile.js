@@ -7,7 +7,6 @@ const cleanCss    = require("gulp-clean-css"); // css minimalize
 const watch       = require('gulp-watch');
 const webserver   = require('gulp-webserver');
 const ghPages     = require('gulp-gh-pages');
-const cleanDeploy = function() { del([".publish"]); }
 
 
 /**
@@ -130,19 +129,6 @@ gulp.task('watch', function () {
 });
 
 /**
- * =====================================+
- * @task : watch로 파일변경 감지
- * =====================================+
- */
-gulp.task('gh', function() {
-    return gulp.src("dist/**/*")
-    .pipe(ghPages(
-        // { branch: "view-pages" }     // 옵션을 설정하지 않으면 자동으로 gh-pages 브랜치를 생성하고 배포 (브랜치명 변경 시 사용)
-    ));
-})
-
-
-/**
  * ==============================+
  * @task : gulp default
  * ==============================+
@@ -150,11 +136,11 @@ gulp.task('gh', function() {
 gulp.task('default', gulp.series([gulp.parallel(['watch','webserver'])]));
 
 
-/**
- * ==============================+
- * @task : gulp Export
- * ==============================+
- */
-export const build = gulp.series([ prepare, assets ]);  // gulp build 실행 (prepare 실행 후 assets 실행) - build만 실행
-export const dev = gulp.series([ build, live ]);// gulp dev 실행 (build 실행 후 live 실행) - build 실행 후 live 실행
-export const deploy = gulp.series([ gh, cleanDeploy ]); // gulp deploy 실행 (현재 dist 폴더를 배포할 경우 첫째 줄 사용, src를 한 번 더 빌드 하여 배포할 경우 둘째 줄 사용)
+
+//git setting
+gulp.task('deploy', function() {
+    gulp.src('./dist/**/*')
+        .pipe(del([".publish"]))
+        .pipe(ghPages());
+});
+

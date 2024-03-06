@@ -18,9 +18,5 @@
     "gulp-watch": "^5.0.1",
     "gulp-webserver": "^0.9.1",
     "sass": "^1.71.1"
-  },
-  "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build"
   }
 }
