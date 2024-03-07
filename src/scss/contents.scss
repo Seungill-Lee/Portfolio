@@ -150,7 +150,7 @@ section#about {
 
 /* Story */
 section#story {
-    position: relative;
+    z-index: 4;
     height: 450vh;
     height: calc(var(--vh, 1vh) * 450);
     h1 {
