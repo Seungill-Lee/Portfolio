@@ -9,6 +9,7 @@ header#header {
     z-index: 12;
     width: 100%;
     height: 50vh;
+    height: calc(var(--vh, 1vh) * 50);
     background-color: orange;
     overflow: hidden;
     h1 {
@@ -19,6 +20,7 @@ header#header {
         left: 0px;
         width: 100%;
         height: 100vh;
+        height: calc(var(--vh, 1vh) * 100);
         background: rgba(0,0,0,1) url(../images/portfolio_header.svg) no-repeat center center;
         background-size: cover;
     }
@@ -193,12 +195,12 @@ footer#footer {
             ul {
                 li {
                     & + li {
-                        margin-top: get-vh(12px,$divceWidth);
+                        margin-top: get-vw(12px,$divceWidth);
                     }
                     a {
-                        padding: get-vh(10px,$divceWidth) get-vw(24px,$divceWidth) get-vh(9px,$divceWidth) get-vw(24px,$divceWidth);
-                        border-radius: get-vh(30px,$divceWidth) 0px 0px get-vh(30px,$divceWidth);
-                        transform: translateX(get-vw(16px,$divceWidth));
+                        padding: get-vw(11px,$divceWidth) get-vw(24px,$divceWidth) get-vw(9px,$divceWidth) get-vw(18px,$divceWidth);
+                        border-radius: get-vw(30px,$divceWidth) 0px 0px get-vw(30px,$divceWidth);
+                        transform: translateX(get-vw(14px,$divceWidth));
                     }
                 }
             }
@@ -227,7 +229,7 @@ footer#footer {
                         margin-top: get-vw(12px,$divceWidth);
                     }
                     a {
-                        padding: get-vw(20px,$divceWidth) get-vw(16px,$divceWidth) get-vw(22px,$divceWidth) get-vw(12px,$divceWidth);
+                        padding: get-vw(20px,$divceWidth) get-vw(16px,$divceWidth) get-vw(22px,$divceWidth) get-vw(10px,$divceWidth);
                         border-radius: get-vw(20px,$divceWidth) 0px 0px get-vw(20px,$divceWidth);
                         transform: translateX(get-vw(6px,$divceWidth));
                         writing-mode: vertical-rl;

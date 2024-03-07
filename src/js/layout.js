@@ -1,5 +1,14 @@
 var deviceMode;
 
+function orgVH() {
+    var vh;
+
+    $(window).on("load resize orientationchange",function() {
+        vh = window.innerHeight * 0.01; 
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+    })
+}
+
 function initHeader() {
     var header = $("header#header");
     var hHeight;
