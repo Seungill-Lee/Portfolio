@@ -15,7 +15,7 @@ function iscAbout() {
     var abOfsTop;
     var abHeight;
     var abViewIs = false;
-    var abTit = about.find("h1");
+    var abTit = about.find("h2");
     var abtOfsTop;
     var abPhoto = about.find(".about_photo");
     var abpOfsTop;
@@ -219,8 +219,8 @@ function iscPortfolio() {
     var pfOfsTop;
     var pfHeight;
     var pfContInner = portfolio.find(".pf_cont_inner");
-    var pfTit = pfContInner.find(">h1");
-    var pfYearTit = pfContInner.find(">h2");
+    var pfTit = pfContInner.find(">h2");
+    var pfYearTit = pfContInner.find(">.pf_year");
     var pfSummary = pfContInner.find(".summary");
     var pfsItem = pfSummary.find(">ul>li");
     var pfiMarginTop;

@@ -107,16 +107,19 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 500;
 }
 h1 {
+	line-height: 1;
+}
+h2 {
 	font-size: get-vw(80px,$divceWidth);
 	line-height: 1;
 	font-weight: 700;
 	font-family: 'Alkatra';
 }
-h2 {
+h3 {
 	font-size: get-vw(40px,$divceWidth);
 	line-height: 1;
 }
-h3 {
+h4 {
 	font-size: get-vw(22px,$divceWidth);
 	line-height: 1;
 }
@@ -198,13 +201,13 @@ strong,b {
     body {
 		font-size: get-vw(16px,$divceWidth);
 	}
-	h1 {
+	h2 {
 		font-size: get-vw(72px,$divceWidth);
 	}
-	h2 {
+	h3 {
 		font-size: get-vw(34px,$divceWidth);
 	}
-	h3 {
+	h4 {
 		font-size: get-vw(20px,$divceWidth);
 	}
 	input,textarea {
@@ -219,13 +222,13 @@ strong,b {
 	body {
 		font-size: get-vw(20px,$divceWidth);
 	}
-	h1 {
+	h2 {
 		font-size: get-vw(76px,$divceWidth);
 	}
-	h2 {
+	h3 {
 		font-size: get-vw(40px,$divceWidth);
 	}
-	h3 {
+	h4 {
 		font-size: get-vw(30px,$divceWidth);
 	}
 	input,textarea {
@@ -245,13 +248,13 @@ strong,b {
 			font-size: get-vw(18px,$divceWidth);
 			line-height: 150%;
 		}
-		h1 {
+		h2 {
 			font-size: get-vw(62px,$divceWidth);
 		}
-		h2 {
+		h3 {
 			font-size: get-vw(34px,$divceWidth);
 		}
-		h3 {
+		h4 {
 			font-size: get-vw(26px,$divceWidth);
 		}
 		input,textarea {
@@ -267,13 +270,13 @@ strong,b {
 			font-size: get-vw(18px,$divceWidth);
 			line-height: 150%;
 		}
-		h1 {
+		h2 {
 			font-size: get-vw(62px,$divceWidth);
 		}
-		h2 {
+		h3 {
 			font-size: get-vw(34px,$divceWidth);
 		}
-		h3 {
+		h4 {
 			font-size: get-vw(26px,$divceWidth);
 		}
 		input,textarea {
