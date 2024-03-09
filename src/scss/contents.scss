@@ -118,7 +118,7 @@ section#about {
                     .gauge {
                         overflow: hidden;
                         .bar {
-                            padding: get-vw(7px,$divceWidth) get-vw(16px,$divceWidth) get-vw(9px,$divceWidth);
+                            padding: get-vw(8px,$divceWidth) get-vw(16px,$divceWidth) get-vw(10px,$divceWidth);
                             box-sizing: border-box;
                             color: white;
                             border-radius: 0px get-vw(10px,$divceWidth) get-vw(10px,$divceWidth) 0px;
@@ -410,7 +410,7 @@ section#portfolio {
                         tbody {
                             tr {
                                 th,td {
-                                    padding: get-vw(20px,$divceWidth) 0px;
+                                    padding: get-vw(18px,$divceWidth) 0px;
                                     border-bottom: 1px solid rgba(0,0,128,0.25);
                                 }
                                 th {
@@ -698,7 +698,7 @@ section#contact_us {
                 }
             }
             ul.detail {
-                width: get-vw(580px,$divceWidth);
+                width: get-vw(540px,$divceWidth);
                 > li {
                     .screenshot {
                         img {
@@ -723,13 +723,13 @@ section#contact_us {
                                         padding: get-vw(14px,$divceWidth) 0px;
                                     }
                                     th {
-                                        width: get-vw(120px,$divceWidth);
+                                        width: get-vw(104px,$divceWidth);
                                     }
                                     td {
                                         &.participation {
                                             .gauge {
                                                 .bar {
-                                                    padding: get-vw(12px,$divceWidth) get-vw(14px,$divceWidth);
+                                                    padding: get-vw(9px,$divceWidth) get-vw(14px,$divceWidth) get-vw(11px,$divceWidth);
                                                     font-size: get-vw(16px,$divceWidth);
                                                 }
                                             }
