@@ -387,7 +387,7 @@ section#portfolio {
                         box-sizing: border-box;
                     }
                 }
-                figcaption {
+                .project_info {
                     margin-top: get-vw(32px,$divceWidth);
                     h3 {
                         font-size: get-vw(28px,$divceWidth);
@@ -404,7 +404,7 @@ section#portfolio {
                             }
                         }
                     }
-                    table.project_info {
+                    table {
                         margin-top: get-vw(10px,$divceWidth);
                         border-collapse: collapse;
                         tbody {
@@ -705,22 +705,22 @@ section#contact_us {
                             max-height: get-vw(450px,$divceWidth);
                         }
                     }
-                    figcaption {
+                    .project_info {
                         h3 {
-                            font-size: get-vh(48px,$divceWidth);
+                            font-size: get-vw(24px,$divceWidth);
                             a {
                                 &:hover {
-                                    text-decoration-thickness: get-vh(3px,$divceWidth);
-                                    text-underline-offset: get-vh(16px,$divceWidth);
+                                    text-decoration-thickness: get-vw(2px,$divceWidth);
+                                    text-underline-offset: get-vw(8px,$divceWidth);
                                 }
                             }
                         }
-                        table.project_info {
-                            margin-top: get-vh(12px,$divceWidth);
+                        table {
+                            margin-top: get-vw(8px,$divceWidth);
                             tbody {
                                 tr {
                                     th,td {
-                                        padding: get-vh(24px,$divceWidth) 0px;
+                                        padding: get-vw(14px,$divceWidth) 0px;
                                     }
                                     th {
                                         width: get-vw(120px,$divceWidth);
@@ -729,8 +729,8 @@ section#contact_us {
                                         &.participation {
                                             .gauge {
                                                 .bar {
-                                                    padding: get-vh(16px,$divceWidth) get-vw(12px,$divceWidth) get-vh(16px,$divceWidth);
-                                                    font-size: get-vh(30px,$divceWidth);
+                                                    padding: get-vw(12px,$divceWidth) get-vw(14px,$divceWidth);
+                                                    font-size: get-vw(16px,$divceWidth);
                                                 }
                                             }
                                         }
@@ -916,7 +916,7 @@ section#contact_us {
                             max-height: 100%;
                         }
                     }
-                    figcaption {
+                    .project_info {
                         margin-top: 0px;
                         h3 {
                             font-size: get-vw(28px,$divceWidth);
@@ -927,7 +927,7 @@ section#contact_us {
                                 }
                             }
                         }
-                        table.project_info {
+                        table {
                             margin-top: get-vw(12px,$divceWidth);
                             tbody {
                                 tr {
@@ -1146,7 +1146,7 @@ section#contact_us {
                                 max-height: calc(100vw - get-vw(260px,$divceWidth))
                             }
                         }
-                        figcaption {
+                        .project_info {
                             margin-top: get-vw(20px,$divceWidth);
                             h3 {
                                 font-size: get-vw(26px,$divceWidth);
@@ -1157,7 +1157,7 @@ section#contact_us {
                                     }
                                 }
                             }
-                            table.project_info {
+                            table {
                                 margin-top: get-vw(12px,$divceWidth);
                                 tbody {
                                     tr {
@@ -1376,7 +1376,7 @@ section#contact_us {
                                 max-height: calc(100vw - get-vw(260px,$divceWidth))
                             }
                         }
-                        figcaption {
+                        .project_info {
                             margin-top: get-vw(20px,$divceWidth);
                             h3 {
                                 font-size: get-vw(26px,$divceWidth);
@@ -1387,7 +1387,7 @@ section#contact_us {
                                     }
                                 }
                             }
-                            table.project_info {
+                            table {
                                 margin-top: get-vw(12px,$divceWidth);
                                 tbody {
                                     tr {
