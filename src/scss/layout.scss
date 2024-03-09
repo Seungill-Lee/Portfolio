@@ -89,6 +89,7 @@ nav#gnb {
 /* Contents */
 section.content {
     position: relative;
+    z-index: 2;
     padding: get-vw(100px,$divceWidth) get-vw(300px,$divceWidth) get-vw(100px,$divceWidth) get-vw(100px,$divceWidth);
     box-sizing: border-box;
     &#about {
@@ -130,12 +131,12 @@ footer#footer {
         ul {
             li {
                 & + li {
-                    margin-top: get-vw(16px,$divceWidth);
+                    margin-top: get-vw(12px,$divceWidth);
                 }
                 a {
-                    padding: get-vw(12px,$divceWidth) get-vw(24px,$divceWidth) get-vw(10px,$divceWidth) get-vw(24px,$divceWidth);
+                    padding: get-vw(12px,$divceWidth) get-vw(24px,$divceWidth) get-vw(12px,$divceWidth) get-vw(24px,$divceWidth);
                     border-radius: get-vw(20px,$divceWidth) 0px 0px get-vw(20px,$divceWidth);
-                    transform: translateX(get-vw(16px,$divceWidth));
+                    transform: translateX(get-vw(14px,$divceWidth));
                 }
             }
         }

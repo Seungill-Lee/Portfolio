@@ -159,6 +159,8 @@ function iscStory() {
     var stcOfsTop = new Array();
     var stcHeight = new Array();
     var stcViewIs = new Array();
+    var footer = $("#footer");
+    var fsOfsTop;
 
     $(window).on("load resize orientationchange",function() {
         stOfsTop = story.offset().top;
@@ -178,11 +180,13 @@ function iscStory() {
             })
         })
 
+        fsOfsTop = $("#footer").offset().top;
+
         $(window).scroll();
     })
 
     $(window).on("scroll",function() {
-        if($(window).scrollTop() > stOfsTop && $(window).scrollTop() <= stOfsTop + stHeight - $(window).height() && stViewIs == false) {
+        if($(window).scrollTop() > stOfsTop && $(window).scrollTop() <= fsOfsTop - $(window).height() && stViewIs == false) {
             story.removeClass("end");
             story.addClass("fixed");
             stViewIs = true
@@ -190,7 +194,7 @@ function iscStory() {
             stCont.removeClass("on")
             story.removeClass("fixed");
             stViewIs = false
-        } else if($(window).scrollTop() > stOfsTop + stHeight - $(window).height() && stViewIs == true) {
+        } else if($(window).scrollTop() > fsOfsTop - $(window).height() && stViewIs == true) {
             story.removeClass("fixed");
             story.addClass("end");
             stViewIs = false

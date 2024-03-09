@@ -148,7 +148,7 @@ section#about {
 
 /* Story */
 section#story {
-    z-index: 4;
+    z-index: 1;
     height: 450vh;
     h1 {
         position: absolute;
@@ -253,6 +253,8 @@ section#story {
 
 /* Portfolio */
 section#portfolio {
+    position: relative;
+    z-index: 2;
     overflow: hidden;
     padding: 0px;
     .pf_cont_inner {
