@@ -631,7 +631,7 @@ section#contact_us {
                 p {
                     transform: translateY(get-vw(20px,$divceWidth));
                     & + p {
-                        margin-top: get-vw(22px,$divceWidth);
+                        margin-top: get-vw(20px,$divceWidth);
                     }
                 }
             }
