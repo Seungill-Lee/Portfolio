@@ -1143,7 +1143,7 @@ section#contact_us {
                 ul.detail {
                     > li {
                         padding: get-vw(120px,$divceWidth) 0px 0px 0px;
-                        min-height: get-vw(480px,$divceWidth);
+                        min-height: auto;
                         .screenshot {
                             position: static;
                             width: 100%;
@@ -1374,13 +1374,12 @@ section#contact_us {
                 ul.detail {
                     > li {
                         padding: get-vw(120px,$divceWidth) 0px 0px 0px;
-                        min-height: get-vw(480px,$divceWidth);
                         .screenshot {
                             position: static;
                             width: 100%;
                             max-height: none;
                             img {
-                                max-height: calc(100vw - get-vw(260px,$divceWidth))
+                                max-height: calc(100vw - get-vw(120px,$divceWidth))
                             }
                         }
                         .project_info {
