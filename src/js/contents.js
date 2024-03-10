@@ -115,19 +115,19 @@ function iscAbout() {
             }
 
             abViewIs = false;
-        } else if($(window).scrollTop() > abOfsTop + abHeight - $(window).height() && abViewIs == true) {
+        } else if($(window).scrollTop() > abOfsTop + abHeight - $(window).height()) {
             if(deviceMode == "pc") {
                 abTit.css({
                     "position": "absolute",
-                    "top": $(window).scrollTop() - abOfsTop + (abtOfsTop - abOfsTop) + "px"
+                    "top": (abHeight - $(window).height()) + (abtOfsTop - abOfsTop) + "px"
                 })
                 abCont.css({
                     "position": "absolute",
-                    "top": $(window).scrollTop() - abOfsTop + "px"
+                    "top": (abHeight - $(window).height()) + "px"
                 })
                 abPhoto.css({
                     "position": "absolute",
-                    "top": $(window).scrollTop() - abOfsTop + (abpOfsTop - abOfsTop) + "px"
+                    "top": (abHeight - $(window).height()) + (abpOfsTop - abOfsTop) + "px"
                 })
             } else if(deviceMode == "mo") {
                 abTit.removeAttr("style")
