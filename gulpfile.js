@@ -2,6 +2,7 @@
 const gulp        = require('gulp');
 const concat      = require('gulp-concat');
 const uglify      = require('gulp-uglify');
+const imagemin    = require('gulp-imagemin');
 const sass        = require('gulp-sass')(require('sass'));
 const cleanCss    = require("gulp-clean-css"); // css minimalize
 const watch       = require('gulp-watch');
@@ -71,6 +72,7 @@ gulp.task('scss', function () {
 gulp.task('images', function () {
     return gulp
         .src('src/images/*.{svg,jpeg,jpg,png,gif}')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/images')) //dist 폴더에 저장
 });
 
@@ -83,6 +85,7 @@ gulp.task('images', function () {
 gulp.task('images:portfolio', function () {
     return gulp
         .src('src/images/portfolio/*.{svg,jpeg,jpg,png,gif}')
+        .pipe(imagemin())
         .pipe(gulp.dest('dist/images/portfolio')) //dist 폴더에 저장
 });
 
