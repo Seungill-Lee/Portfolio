@@ -114,7 +114,7 @@ function initGNB() {
         $("html,body").animate({
             "scrollTop": Math.round(contOfsTop[newTargetIdx])
         },300*(Math.abs(newTargetIdx - oldTargetIdx)),function() {
-            oldTargetIdx = newTargetIdx
+            oldTargetIdx = newTargetIdx;
         })
 
         return false;
