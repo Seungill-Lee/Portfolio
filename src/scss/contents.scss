@@ -125,6 +125,10 @@ section#about {
                             background-color: crimson;
                             transform: translateX(-100%);
                             transition: 0.3s ease transform;
+                            &.react {
+                                color: #61DAFB;
+                                background-color: rgb(23,23,23);
+                            }
                         }
                     }
                 }
